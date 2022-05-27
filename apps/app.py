@@ -11,11 +11,11 @@ import streamlit as st
 import numpy as np
 from pathlib import Path
 
-os_path = Path(__file__).parents[0] / 'DaneWydatki.csv'
+os_path = Path(__file__).parents[0] / 'DaneWydatki.xlsx'
 st.set_page_config(page_title='Sales Dashboard', page_icon = ':bar_chart:',
                   layout='centered')
 with open(os_path, encoding="utf8", errors='ignore') as f:
-    df = pd.read_csv(f,sep=';',header=0)
+    df = pd.read_csv(f)
 
 
 
