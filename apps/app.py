@@ -14,7 +14,7 @@ from pathlib import Path
 os_path = Path(__file__).parents[0] / 'DaneWydatki1.xlsx'
 st.set_page_config(page_title='Sales Dashboard', page_icon = ':bar_chart:',
                   layout='centered')
-with open(os_path, 'r', encoding="ISO-8859-1") as f:
+with open(os_path, 'r', encoding="windows_1258") as f:
         df = pd.read_csv(f)
 
 
