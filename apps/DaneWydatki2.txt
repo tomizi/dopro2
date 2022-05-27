@@ -1,2 +1,3 @@
+data cena miejsce
 1 2 kk
 1 3 aa
