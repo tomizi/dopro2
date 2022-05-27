@@ -14,7 +14,7 @@ from pathlib import Path
 os_path = Path(__file__).parents[0] / 'DaneWydatki.csv'
 st.set_page_config(page_title='Sales Dashboard', page_icon = ':bar_chart:',
                   layout='centered')
-with open(os_path, encoding="utf8", errors='ignore') as f
+with open(os_path, encoding="utf8", errors='ignore') as f:
     df = pd.read_csv(f)
 
 
